@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "Lexend Deca";
+    src:
+      local("Lexend Deca"),
+      url("./font/LexendDeca-Bold.ttf");
+    font-weight: 400;
+    font-style: Bold;
+}
+
+h1{
+    font-family: "Lexend Deca";
+}
+
+header{
+    overflow: hidden;
+    color: white;
+}
+
+.bg-img{
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.nav-link{
+    text-decoration: underline;
+    color: white;
+}
+
+.custom-btn{
+    opacity: 0.5;
+    background-color: #5468E7;
+}
+.custom-btn:hover{
+    opacity: 1;
+    background-color: #5468E7;
+}
+
+.early-access{
+    height: 80vh;
+}
