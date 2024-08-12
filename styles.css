@@ -1,14 +1,28 @@
 @font-face {
-    font-family: "Lexend Deca";
+    font-family: "Lexend Deca Bold";
     src:
-      local("Lexend Deca"),
       url("./font/LexendDeca-Bold.ttf");
     font-weight: 400;
     font-style: Bold;
 }
 
-h1{
+@font-face {
     font-family: "Lexend Deca";
+    src:
+      url("./font/LexendDeca-Regular.ttf");
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+.cover-title{
+    font-family: "Lexend Deca Bold";
+    font-size: 51px;
+}
+
+.cover-text{
+    font-family: "Lexend Deca";
+    font-size: 19px;
 }
 
 header{
@@ -29,9 +43,21 @@ header{
 .nav-link{
     text-decoration: underline;
     color: white;
+    font-family: "Lexend Deca";
+}
+
+.nav-btn{
+    width: 150px;
+    opacity: 0.5;
+    background-color: #5468E7;
+}
+.nav-btn:hover{
+    opacity: 1;
+    background-color: #5468E7;
 }
 
 .custom-btn{
+    height: 40px;
     opacity: 0.5;
     background-color: #5468E7;
 }
@@ -40,6 +66,103 @@ header{
     background-color: #5468E7;
 }
 
-.early-access{
-    height: 80vh;
+.cover{
+    height: 90vh;
+}
+
+.form-float{
+    position: relative;
+}
+
+.form-float i{
+    color: black;
+    position: absolute;
+    top: calc(30%);
+    right: 1.4rem;
+}
+
+body{
+    background-color: #f5f5f5;
+    /* overflow-x: hidden; */
+}
+
+/* .body-content{
+    height: 100%;
+    width: 100%;
+} */
+
+.carousel-inner {
+    padding: 1em;
+}
+.card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+    .carousel-item {
+      margin-right: 0;
+      flex: 0 0 33.333333%;
+      display: block;
+    }
+    .carousel-inner {
+      display: flex;
+    }
+}
+
+.card img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+@media (max-width: 767px) {
+    .card .img-wrapper {
+      height: 17em;
+    }
+}
+
+.username{
+    font-family: "Lexend Deca";
+    font-size: 20px;
+}
+
+.user-job{
+    color: gray;
+    font-family: "Lexend Deca";
+    font-size: 10px;
+}
+
+.star{
+    color: #ffa600;
+}
+
+footer{
+    background-color: #232240;
+}
+
+.footer-text{
+    font-family: "Lexend Deca";
+    font-size: 14px;
+    color: white;
+}
+
+.footer-title{
+    font-family: "Lexend Deca";
+    font-size: 24px;
+    color: #5667d9;
+}
+
+.footer-form{
+    background-color: gray;
+    color: white;
+    stroke: none;
 }
